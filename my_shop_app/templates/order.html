@@ -11,12 +11,25 @@
     {% for order in orders %}
     <div>
       <p>
+        <!-- Order Number:  {{order.order_number}} <br> -->
         Order name: {{ order.customer_name }}: <br />
         Order Date: {{order.order_date}} <br />
         Food: {{ order.food_description }} <br />
         Quality: {{order.quality}}
       </p>
     </div>
+    {% endfor %} 
+    
+    {% for order in orders %}
+    <div>
+      <p>
+        order details:
+        <a href="./orders/list{{order.order_number}}"
+          >order {{order.order_number}}</a
+        >
+      </p>
+    </div>
+
     {% endfor %}
   </body>
 </html>
