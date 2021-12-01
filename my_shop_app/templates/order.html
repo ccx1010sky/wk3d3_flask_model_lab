@@ -8,7 +8,7 @@
     <title>{{title}}</title>
   </head>
   <body>
-    <h6><a href="/">Home</a></h6>
+    <h6><a href="/">H</a></h6>
     <h1>Order List!</h1>
     {% for order in orders %}
     <div>
@@ -26,7 +26,7 @@
     <div>
       <p>
         order details:
-        <a href="./orders/list{{order.order_number}}"
+        <a href="./orders/{{order.order_number-1}}"
           >order {{order.order_number}}</a
         >
       </p>
