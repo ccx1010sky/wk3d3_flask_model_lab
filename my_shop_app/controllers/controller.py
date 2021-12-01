@@ -5,7 +5,7 @@ from models.order_lsit import orders
 @app.route("/")
 
 def index():
-    return "Helloo World"
+    return render_template("index.html",title = "Food shop")
 
 # 
 @app.route("/orders")
